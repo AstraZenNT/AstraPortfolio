@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter/Inter.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('fonts/Josefin_Sans/JosefinSans.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JosefinSlab';
+    src: url('fonts/Josefin_Slab/JosefinSlab.ttf');
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2, h3, h6 {
+    font-family: 'JosefinSans';
+    
+}
+
+h1 {
+    font-family: 'JosefinSlab';
+    font-size: 50px;
+    margin: 0;
+}
+
+h5 {
+    font-family: 'JosefinSlab';
+    margin: 0.5rem;
+}
+
+p {
+    margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #d6f1f4;
+    color: rgb(0, 0, 0);
+    font-family: 'Inter';
+    margin: 0;
+    row-gap: 0.3rem;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-items: end;
+}
+
+button {
+    font-family: 'JosefinSans';
+    background-color: #E5CF9A;
+    padding: 1rem;
+    border: 2px solid #AC9464;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#landing,
+#about,
+#info,
+#pricing,
+#footer {
+    height: auto;
+}
+
+#landing {
+    background-image: url('img/blueHouse.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+#landingModal {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    width: 50%;
+    box-shadow: 0 0 10px;
+    padding: 1rem;
+}
+
+#boy {
+    /* height: clamp(200px, 100vh, 750px); */
+    max-height: 80vh;
+    height: auto;
+    align-self: flex-end;
+    margin-left: 1rem;
+}
+
+#logoText {
+    height: 50px;
+    width: auto;
+    display: block;
+    margin-left: 1.5rem;
+}
+
+#nav img#logoText {
+  display: block;
+  width: auto;
+  height: clamp(28px, 7vh, 65px);
+}
+
+#nav li {
+    margin-right: 1.5rem;
+}
+
+#nav li a{
+    display: inline-block;
+    padding: 6px;
+    line-height: 0;
+    text-align: center;
+    border: 2px solid transparent; 
+    border-radius: 3px;
+    transition: border-color 0.12s ease, transform 0.12s ease;
+}
+
+#nav li a img{
+    display: block;
+    margin: 0 auto;
+}
+
+#nav li a:hover{
+    border-color: black; 
+    transform: translateY(-1px) scale(1.04);
+}
+
+#nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 60px;
+    max-height: 10vh;
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+}
+
+.sectionContainer {
+    height: 90vh;
+    width: 100%;
+    scroll-margin-top: 60px;
+    
+}
+
+#about {
+    background-image: url('img/features.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#about img {
+    width: 100%;
+    height: clamp(100px, 200px, 220px);
+}
+
+
+#f1 { 
+    grid-column: 1; grid-row: 1; justify-self: start; align-self: start; }
+#f2 { 
+    grid-column: 2; grid-row: 1; justify-self: end;   align-self: start; }
+#f3 { 
+    grid-column: 1; grid-row: 2; justify-self: start; align-self: end; }
+#f4 { 
+    grid-column: 2; grid-row: 2; justify-self: end;   align-self: end; }
+
+
+#info {
+width: 100%;
+}
+
+#info img {
+    width: 100%;
+}
+
+.infoModal img {
+    width: 100%;
+}
+
+#tagline {
+    width: 100%;
+}
+
+
+#pricing img {
+    width: 100%;
+}
+
+#footer {
+    height: 100%;
+    width: 100%;
+}
+
+#footer img {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}

@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter/Inter.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter';
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 3rem;
+    transition: 0.2s ease-out;
+    margin-bottom: 3rem;
+    margin-top: 8rem;
+}
+
+button:hover{
+    box-shadow: 0 0 10px 5px white;
+    transition: 0.2s ease;
+}
+
+
+.sectionContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+#nav img {
+    height: clamp(20px, 6vw, 60px);
+    align-self: start;
+    margin-right: 2rem;
+}
+
+#charContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    /* border: 3px solid transparent; */
+}
+
+.colorBox {
+    transform: scale(1);
+    transition: filter 0.2s ease-out;
+    outline: 5px solid white;
+}
+
+.colorBox:hover{
+    filter: hue-rotate(160deg);
+    transition: 0.2s;
+}
+
+#charContainer img {
+    width: 100%;
+    height: auto;
+}
+
+#skills {
+    margin: 6rem;
+}
+
+#skills img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#othersite {
+    background-color: black;
+    color: white;
+}
